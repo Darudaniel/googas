@@ -17,37 +17,47 @@ html {
   background-color: var(--dark-background);
 }
 
+
 h1 {
   font-size: 3.5rem;
 }
 h2 {  
-  font-size: 2rem;
+  font-size: 3rem;
 }
 h3 {
-  font-size: 1.5rem;
+  font-size:2rem;
 }
 h4 {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: 300;
 }
+
 header {
   background-color: var(--just-white);  
 }
 
 .header-container {
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: 1.08fr 2.92fr 1fr;
   padding: 15px;
-  max-width: 768px;
+  max-width: 1024px;
   margin: 0 auto;
 }
 
+.hero--logo img {
+  max-height: 5rem;
+}
 .hero a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   text-decoration: none;
   color: var(--dark-background);
 }
 .nav-container {
-  margin-right: 70px;
+  margin:0 70px;
+  display: flex;
+  align-items: center;
 }
 .nav-container ul {
   display: grid;
@@ -55,24 +65,40 @@ header {
 }
 .nav-container li {
   list-style: none;
+  margin: 0 20px;  
 }
 .nav-container a, .nav-container i {
   text-decoration: none;
   color: var(--dark-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+  line-height: 2rem;
 }
 
-
+.user-box {  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.user--imgContainer {
+  margin: 0 10px;
+}
+.user--imgContainer img{
+  max-height: 2rem;
+}
 .user-box a {
   display: flex;
   flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
   color: var(--dark-background);
   text-decoration: none;
 }
 
 .user-box i {
-  margin-left: 10px;
-  vertical-align: text-top;
-  align-self: top;
+  margin-left: 10px;  
 }
 
 
@@ -83,12 +109,13 @@ main {
   -webkit-box-shadow: 0px 0px 9px 0px #000000; 
   box-shadow: 0px 0px 9px 0px #000000;
   padding: 50px 0;
+  height: 84vh;
 }
 
 .main-container {
   padding-right: 50px;
   padding-top: 20px;
-  max-width: 768px;
+  max-width: 1024px;
   margin: 0 auto;
 }
 
@@ -117,8 +144,16 @@ main {
 
 .player-profile {
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: 1.5fr 2.5fr 1fr;
   justify-items: center;
+}
+
+.profile--avatar figure {
+  display: flex;
+  justify-content: center;
+}
+.profile--avatar img {
+  width: 150px;
 }
 
 .profile-relations {
@@ -143,4 +178,5 @@ footer {
   padding: 70px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  max-height: 10px;
 }
