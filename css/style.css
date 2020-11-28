@@ -6,7 +6,8 @@
 :root{
   --dark-background: #222831;
   --medium-dark-subback: #393e46;
-  --great-grey: #484c52;
+  --dar-grey: #484c52;
+  --great-grey: #73757a;
   --googas-orange: #ff7315;
   --weird-white: #f4f4f4;
   --just-white: #fff;
@@ -109,7 +110,7 @@ main {
   -webkit-box-shadow: 0px 0px 9px 0px #000000; 
   box-shadow: 0px 0px 9px 0px #000000;
   padding: 50px 0;
-  height: 84vh;
+  height: auto;
 }
 
 .main-container {
@@ -132,7 +133,7 @@ main {
   justify-content: center;
   align-items: center;
 }
-.info--seen h2 {
+.info--seen h3 {
   color: var(--great-grey);
 }
 .info--friendship {
@@ -146,6 +147,7 @@ main {
   display: grid;
   grid-template-columns: 1.5fr 2.5fr 1fr;
   justify-items: center;
+  margin-top: 30px;
 }
 
 .profile--avatar figure {
@@ -170,13 +172,27 @@ main {
   padding: 50px;
   margin-top: 50px;
 }
+.cartel {
+  display: grid;
+  grid-template-rows: 0.8fr 3.2fr;
+  margin: 10px;
+}
 
+.cartel--grilla {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);  
+  gap: 6px;
+}
+.cartel--grilla img {
+  
+}
 
 /* FOOTER */
 
 footer {
-  padding: 70px;
+  padding: 30px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  height: auto;
   max-height: 10px;
 }
