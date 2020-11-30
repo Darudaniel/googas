@@ -6,9 +6,9 @@
 :root{
   --dark-background: #222831;
   --medium-dark-subback: #393e46;
-  --dar-grey: #484c52;
+  --dark-grey: #484c52;
   --great-grey: #73757a;
-  --googas-orange: #ff7315;
+  --googas-orange: #fe6600;
   --weird-white: #f4f4f4;
   --just-white: #fff;
 }
@@ -31,6 +31,10 @@ h3 {
 h4 {
   font-size: 1.6rem;
   font-weight: 300;
+}
+
+p {
+  font-size: 1.2rem;
 }
 
 header {
@@ -127,11 +131,16 @@ main {
   margin-bottom: 20px;
 }
 
+.info--name {
+  justify-self: flex-start;
+  padding-left: 20px;
+}
 
 .info--seen {
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-self: flex-start;
 }
 .info--seen h3 {
   color: var(--great-grey);
@@ -164,18 +173,13 @@ main {
   justify-items: center;
 }
 
-
-/* SPECIFIC INFO */
-
-.specific-info--container{
-  background-color: var(--medium-dark-subback);
-  padding: 50px;
-  margin-top: 50px;
-}
 .cartel {
   display: grid;
-  grid-template-rows: 0.8fr 3.2fr;
-  margin: 10px;
+  grid-template-rows: 0.5fr 3.5fr;
+  margin: 0 25px;
+}
+.cartel figure {
+  height: 70px;
 }
 
 .cartel--grilla {
@@ -183,16 +187,56 @@ main {
   grid-template: repeat(3, 1fr) / repeat(3, 1fr);  
   gap: 6px;
 }
+
 .cartel--grilla img {
-  
+  width: 38px;
 }
+
+.profile--stats div {
+  display: flex;
+  justify-content: space-around;
+  /* border: 1px solid var(--medium-dark-subback); */
+  border-radius: 5px;
+  background-color: var(--googas-orange);
+  margin: 5px;
+  padding: 15px;
+  color: var(--just-white);
+  box-shadow: 0px 0px 14px 4px #393e46;
+}
+
+.profile--stats h4 {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+.profile--stats p {
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+
+
+/* SPECIFIC INFO */
+
+.specific-info--container{
+  background-color: var(--medium-dark-subback);
+  padding: 50px;
+  margin-top: 20px;
+}
+
+
 
 /* FOOTER */
 
 footer {
   padding: 30px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 2fr 1fr;
+  justify-content: space-between;
   height: auto;
   max-height: 10px;
+}
+
+.footer--contact {
+  display: flex;
+  justify-content: space-around;
 }
