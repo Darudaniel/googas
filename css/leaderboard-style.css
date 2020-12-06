@@ -1,0 +1,15 @@
+.title-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.table-container {
+  display: grid;
+  grid-template-rows: 1fr 10fr;
+  gap: 40px; 
+}
+.score-type, .score-competitors {
+  display: grid;
+  grid-template-columns: 1fr 2fr repeat(2, 1fr);  
+}
