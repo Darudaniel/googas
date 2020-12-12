@@ -1,3 +1,13 @@
+:root{
+  --dark-background: #222831;
+  --medium-dark-subback: #393e46;
+  --medium-dark-modified: #313b3f;
+  --dark-grey: #484c52;
+  --great-grey: #73757a;
+  --googas-orange: #fe6600;
+  --weird-white: #f4f4f4;
+  --just-white: #fff;
+}
 .title-container {
   display: flex;
   justify-content: center;
@@ -8,8 +18,46 @@
   display: grid;
   grid-template-rows: 1fr 10fr;
   gap: 40px; 
+  background-color: var(--medium-dark-modified);
+  border-radius: 10px;
 }
 .score-type, .score-competitors {
+  padding: 20px;
   display: grid;
-  grid-template-columns: 1fr 2fr repeat(2, 1fr);  
+  grid-template-columns: 1fr 1.5fr repeat(2, 1fr);  
+  justify-items: center;
+}
+.score-type {
+  background-color: var(--just-white);
+  color: var(--dark-background);
+  border-radius: 10px;
+}
+
+.score-type--player, .player-name-column {
+  justify-self: left;
+}
+.score-type div {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;  
+}
+.score-type div i {
+  margin-right: 10px;
+  font-size: 1.6rem;
+  margin-top: 4px;
+}
+.score-competitors {
+  padding-top: 0;
+}
+
+.score-column {
+  display: grid;
+  grid-template-rows: repeat(10, 1fr);
+}
+.elo-column {
+  justify-content: left;
+}
+.elo-column h4{
+  justify-self: right;
 }
