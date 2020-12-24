@@ -1,0 +1,27 @@
+{
+  "name": "googas",
+  "version": "1.0.0",
+  "description": "web for googas server",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Darudaniel/googas.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JS"
+  ],
+  "author": "Daru",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Darudaniel/googas/issues"
+  },
+  "homepage": "https://github.com/Darudaniel/googas#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
