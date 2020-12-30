@@ -16,5 +16,5 @@ const showData = function() {
     HtmlKdElement.innerHTML = TopPlayers[i].kd
   }  
 }
-// EXPORTAR DICHA FUNCION QUE IMPRIME LOS DATOS EN PANTALLA
+// EXPORTAR DICHA FUNCION QUE IMPRIME LOS DATOS EN LA PANTALLA
 export default showData
