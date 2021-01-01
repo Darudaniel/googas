@@ -53,7 +53,7 @@ header {
   margin: 0 auto;
 }
 
-.hero--logo img {
+.hero__logo img {
   max-height: 5rem;
 }
 .hero a {
@@ -91,10 +91,10 @@ header {
   align-items: center;
   justify-content: center;
 }
-.user--imgContainer {
+.user-box__imgContainer {
   margin: 0 10px;
 }
-.user--imgContainer img{
+.user-box__imgContainer img{
   max-height: 2rem;
 }
 .user-box a {
@@ -135,21 +135,21 @@ main {
   margin-bottom: 20px;
 }
 
-.info--name {
+.player-info__name {
   justify-self: flex-start;
   padding-left: 20px;
 }
 
-.info--seen {
+.info__seen {
   display: flex;
   justify-content: center;
   align-items: center;
   justify-self: flex-start;
 }
-.info--seen h3 {
+.info__seen h3 {
   color: var(--great-grey);
 }
-.info--friendship {
+.info__friendship {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -176,15 +176,15 @@ main {
   margin-top: 30px;
 }
 
-.profile--avatar figure {
+.player-profile__avatar figure {
   display: flex;
   justify-content: center;
 }
-.profile--avatar img {
+.player-profile__avatar img {
   width: 150px;
 }
 
-.profile-relations {
+.player-profile__relations {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
@@ -199,17 +199,17 @@ main {
   height: 70px;
 }
 
-.cartel--grilla {
+.cartel__grilla {
   display: grid;
   grid-template: repeat(3, 1fr) / repeat(3, 1fr);  
   gap: 6px;
 }
 
-.cartel--grilla img {
+.cartel__grilla img {
   width: 38px;
 }
 
-.profile--stats div {
+.profile__stats div {
   display: flex;
   justify-content: space-around;
   /* border: 1px solid var(--medium-dark-subback); */
@@ -221,11 +221,11 @@ main {
   box-shadow: 0px 0px 14px 4px #393e46;
 }
 
-.profile--stats h4 {
+.profile__stats h4 {
   font-weight: bold;
   font-size: 1.8rem;
 }
-.profile--stats p {
+.profile__stats p {
   margin-left: 20px;
   margin-top: 5px;
 }
@@ -234,7 +234,7 @@ main {
 
 /* SPECIFIC INFO */
 
-.specific-info--container{
+.specific-info-container{
   background-color: var(--medium-dark-subback);
   padding: 50px;
   margin-top: 20px;
@@ -257,7 +257,7 @@ footer a {
   color: white;
 }
 
-.footer--contact {
+.footer__contact {
   display: flex;
   justify-content: space-around;
 }

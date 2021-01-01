@@ -22,33 +22,33 @@
   box-shadow: 0 0 20px 3px black;;
   border-radius: 10px;
 }
-.score-type, .score-competitors {
+.score-type-bar, .score-type--competitors {
   padding: 20px;
   display: grid;
   grid-template-columns: 1fr 1.5fr repeat(2, 1fr);  
   justify-items: center;
 }
-.score-type {
+.score-type-bar {
   background-color: var(--just-white);
   color: var(--dark-background);
   border-radius: 10px;
 }
 
-.score-type--player, .player-name-column {
+.score-type--player, .column--player-name {
   justify-self: left;
 }
-.score-type div {
+.score-type-bar div {
   display: flex;
   flex-wrap: nowrap;
   align-content: center;
   justify-content: space-between;  
 }
-.score-type div i {
+.score-type-bar div i {
   margin-right: 10px;
   font-size: 1.6rem;
   margin-top: 4px;
 }
-.score-competitors {
+.score-type--competitors {
   padding-top: 0;
 }
 
@@ -56,10 +56,10 @@
   display: grid;
   grid-template-rows: repeat(10, 1fr);
 }
-.elo-column {
+.column--elo {
   justify-content: left;
 }
-.elo-column h4{
+.column--elo h4{
   justify-self: right;
 }
 
