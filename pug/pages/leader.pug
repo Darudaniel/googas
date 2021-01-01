@@ -1,0 +1,63 @@
+extend ../components/template.pug
+block content
+  main
+    div(class="main-container")
+      section(class="title-container")
+        h1 Leaderboard
+      section(class="table-container")
+        div(class="score-type-bar")
+          div
+            h3 Ranking
+          div(class="score-type--player")
+            h3 Player
+          div
+            h3 Elo
+          div
+            i(class="fab fa-battle-net")
+            h3 K/D
+        div(class="score-type--competitors")
+          div(class="score-column ranking-column")
+            h4 1<i class="fas fa-crown crown1"></i>
+            h4 2<i class="fas fa-crown crown2"></i>
+            h4 3<i class="fas fa-crown crown3"></i>
+            h4 4
+            h4 5
+            h4 6
+            h4 7
+            h4 8
+            h4 9
+            h4 10
+          div(class="score-column column--player-name")
+            h4(id="name1")
+            h4(id="name2")
+            h4(id="name3")
+            h4(id="name4")
+            h4(id="name5")
+            h4(id="name6")
+            h4(id="name7")
+            h4(id="name8")
+            h4(id="name9")
+            h4(id="name10")
+          div(class="score-column column--elo")
+            h4(id="elo1")
+            h4(id="elo2")
+            h4(id="elo3")
+            h4(id="elo4")
+            h4(id="elo5")
+            h4(id="elo6")
+            h4(id="elo7")
+            h4(id="elo8")
+            h4(id="elo9")
+            h4(id="elo10")
+          div(class="score-column column--kd")
+            h4(id="kd1")
+            h4(id="kd2")
+            h4(id="kd3")
+            h4(id="kd4")
+            h4(id="kd5")
+            h4(id="kd6")
+            h4(id="kd7")
+            h4(id="kd8")
+            h4(id="kd9")
+            h4(id="kd10")
+  script(type="module" src="../../js/index.js")
