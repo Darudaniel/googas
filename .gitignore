@@ -1,5 +1,6 @@
 node_modules
 backups
 pug
+sass
 package-lock.json
 prepros.config
