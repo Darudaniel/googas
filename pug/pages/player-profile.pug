@@ -63,4 +63,15 @@ block content
           div
             h4 1340
             p raindrops <br>
-      section(class="specific-info-container") box donde iban los plenos y las infractions
+      //- section(class="specific-info-container") box donde iban los plenos y las infractions
+      div(class="container position-relative specific-info-container")
+        button(class="btn btn-warning info-button" type="button" data-bs-toggle="collapse" data-bs-target="#trophy-case" aria-expanded="false" aria-controls="infractions trophy-case") Trophy Case
+        button(class="btn btn-warning info-button" type="button" data-bs-toggle="collapse" data-bs-target="#infractions" aria-expanded="false" aria-controls="infractions trophy-case") Infractions
+        div(class="collapse multi-collapse" id="trophy-case")          
+          div(class="card card-body bg-secondary rounded")
+            h4 Trophy case
+            p Es un capo
+        div(class="collapse multi-collapse" id="infractions")
+          div(class="card card-body bg-secondary")
+            h4 Infractions
+            p Es un pillin
